@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PetShop</title>
+    <link href="../CSS/style2.css" rel="stylesheet">
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="nome">PetHappy</div>
+                <img src="../images/gato.png" alt="Mini Logo" class="mini-logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Produtos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Roupas</a>
+                            <a href="#">Brinquedos</a>
+                            <a href="#">Rações</a>
+                        </div>
+                    </li>
+                    <li><a href="cadastro.html">Serviços</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="login-wrapper">
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="login-button">Entrar</button>
+        </div>
+        <div class="form-footer">
+            <!-- <p><a href="#">Esqueceu sua senha?</a></p> -->
+            <p>Não tem uma conta? <a href="../HTML/resgister.html">Registre-se</a></p>
+        </div>
+    </form>
+</div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@PetHappy.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </div>
+        <div class="footer-section">
+            <h4>Links Úteis</h4>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="social-media-icons">
+                <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 PetHappy. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

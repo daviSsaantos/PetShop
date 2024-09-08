@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PetShop</title>
+    <link href="../CSS/style2.css" rel="stylesheet">
+    <script src="../index.js" defer></script>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="nome">PetHappy</div>
+                <img src="../images/gato.png" alt="Mini Logo" class="mini-logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Produtos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Roupas</a>
+                            <a href="#">Brinquedos</a>
+                            <a href="#">Rações</a>
+                        </div>
+                    </li>
+                    <li><a href="cadastro.html">Serviços</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>Crie sua conta</h2>
+            <form id="createAccountForm" onsubmit="return VerificaCPF();">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" maxlength="11" inputmode="numeric" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+    
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required minlength="6">
+    
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" required pattern="\d{10,11}" placeholder="(99) 99999-9999">
+    
+                <button type="submit">Criar Conta</button>
+            </form>
+        </div>
+
+    </div>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@PetHappy.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </div>
+        <div class="footer-section">
+            <h4>Links Úteis</h4>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="social-media-icons">
+                <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 PetHappy. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
